@@ -1,77 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Website Andia - Beranda</title>
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- Tabel Utama Seluruh Halaman -->
-    <table border="1" width="800" align="center" cellpadding="6" cellspacing="0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: darkgrey;
+            margin: 0;
+            padding: 30px 10px;
+            color: #333333;
+        }
+
+        table {
+            border-collapse: separate !important;
+            border-spacing: 0;
+            border: 1px solid #ccc !important;
+            border-radius: 15px !important;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3) !important;
+            background-color: white !important;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        td[bgcolor="060F8F"] {
+            background-color: #060F8F !important;
+            padding: 20px !important;
+        }
         
-        <!-- Header / Banner (Warna Biru Tua) -->
+        td[bgcolor="8FBBFF"] {
+            background-color: #8FBBFF !important;
+            padding: 12px 15px !important;
+            text-align: left;
+        }
+        
+        td[bgcolor="8FBBFF"] a {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #060F8F !important;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 6px 16px;
+            margin: 0 3px;
+            border-radius: 20px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15), 
+                        inset 0 1px 1px rgba(255, 255, 255, 0.9);
+            transition: all 0.2s ease;
+        }
+
+        td[bgcolor="8FBBFF"] a: {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        td[width="75%"] {
+            padding: 25px !important;
+            background-color: white !important;
+        }
+
+        td[width="75%"] h3 {
+            margin-top: 0;
+            color: #1a202c;
+        }
+
+        td[width="75%"] a {
+            color: #0000ee;
+            text-decoration: underline;
+        }
+
+        td[bgcolor="lightgrey"] {
+            background-color: lightgrey !important;
+            padding: 20px !important;
+            border-left: 1px solid #ccc !important;
+        }
+
+        td[bgcolor="lightgrey"] p {
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        tr:last-child td  {
+            background-color: #060F8F !important;
+            padding: 12px 15px !important;
+        }
+    </style>
+</head>
+
+<body bgcolor="darkgrey" background="images/background.svg">
+    <p>&nbsp;</p>
+    <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="white">
         <tr>
-            <td colspan="2" bgcolor="#004080" align="center" height="150">
-                <h1><font color="#FFFFFF">Website Andia</font></h1>
-                <p><i><font color="#E0F0FF">Menjelajah Ide, Merangkai Informasi, Menginspirasi Setiap Hari</font></i></p>
+            <td colspan="2" align="center" bgcolor="060F8F" background="images/jaring-teal.svg">
+                <font color="white">
+                    <p>&nbsp;</p>
+                    <h1>Website Andia</h1>
+                    <p><em>I was good, i was really good.</em></p>
+                    <p>&nbsp;</p>
+                </font>
             </td>
         </tr>
-
-        <!-- Menu Navigasi -->
         <tr>
-            <td colspan="2" bgcolor="#B3D9FF">
-                <a href="#">Beranda</a> 
-                <a href="#">Profile</a> 
-                <a href="#">Galeri</a> 
-                <a href="#">Kontak</a>
+            <td colspan="2" bgcolor="8FBBFF">
+                <a href="index.html">Beranda</a> |
+                <a href="Tentang Saya.html">Tentang Saya</a> |
+                <a href="Sekolah.html">Sekolah</a> |
+                <a href="Syair Lagu.html">Syair lagu</a>
             </td>
         </tr>
+        <tr>
+            <td width="75%">
 
-        <!-- Konten Utama & Sidebar -->
-        <tr valign="top">
-            
-            <!-- Kolom Konten Utama (Kiri) -->
-            <td width="70%">
-                
-                <!-- Berita 1 -->
-                <h3>Pembelajaran Jarak Jauh</h3>
-                <p><i>Senin, 7 September 2026</i></p>
-                <p>
-                    Karena adanya abu erupsi anak gunung Krakatau, maka selama 3 hari ke depan, pembelajaran dilakukan secara jarak jauh. Pembelajaran dapat memakai zoom, LMS, WhatsApp, Telegram, atau media lain yang ditentukan oleh guru.
-                </p>
-                <p><a href="#">Selanjutnya</a></p>
-                
+                <h3>Ekspansi Jaringan Kereta Cepat Indonesia</h3>
+                <p align="left"><small><em>Minggu, 11 September 2026</em></small></p>
+                <p>Pemerintah terus memperluas jaringan transportasi massal modern di Indonesia guna meningkatkan efisiensi mobilitas antarkota serta mengurangi tingkat polusi udara di kota-kota besar.</p>
+                <p><a href="Berita 1.html">Selanjutnya</a></p>
+
                 <hr>
 
-                <!-- Berita 2: Lomba Pensi di Tangcity -->
-                <h3>Lomba Pensi Antar Sekolah di Tangcity Mall</h3>
-                <p><i>Jumat, 4 September 2026</i></p>
-                <p>
-                    Dalam rangka menyalurkan bakat seni pelajar, akan diadakan Lomba Pensi (Pentas Seni) antar sekolah se-Tangerang yang berlokasi di Main Atrium Tangcity Mall. Kategori lomba meliputi tari modern, akustik band, dan solo vocal dengan total hadiah jutaan rupiah.
-                </p>
-                <p><a href="#">Selanjutnya</a></p>
-            </td>
+                <h3>Atlet Indonesia Borong Medali di Kejuaraan Internasional</h3>
+                <p align="left"><small><em>Sabtu, 10 September 2026</em></small></p>
+                <p>Kabar membanggakan datang dari dunia olahraga tanah air. Kontingen Indonesia sukses menorehkan prestasi gemilang dengan memboyong sejumlah medali emas dari ajang kejuaraan tingkat Asia.</p>
+                <p><a href="Berita 2.html">Selanjutnya</a></p>
 
-            <!-- Kolom Sidebar / Temukan Kami (Kanan) -->
-            <td width="30%" bgcolor="#E6F2FF">
-                <p><b>Temukan kami!</b></p>
+            </td>
+            <td width="25%" valign="top" bgcolor="lightgrey">
+                <p>Temukan Kami!</p>
                 <ol>
                     <li><a href="https://www.instagram.com/smkn1tng/">Instagram Nesta</a></li>
-                    <li><a href="https://www.instagram.com/menfess.nesta/">Menfess Nesta</a></li>
                     <li><a href="https://www.smkn1-tng.sch.id/">Website Nesta</a></li>
                     <li><a href="https://www.tiktok.com/@smkn1tng">Tiktok Nesta</a></li>
                 </ol>
             </td>
-
         </tr>
-
-        <!-- Footer -->
         <tr>
-            <td colspan="2" align="right" bgcolor="#CCE5FF">
-                <small>&copy; Copyright Andia, 2026.</small>
+            <td colspan="2" align="right" bgcolor="060F8F">
+                <font color="white"><small>&copy; Copyright Andia Oktari S, 2026.</small></font>
             </td>
         </tr>
-
     </table>
-
+    <p>&nbsp;</p>
 </body>
 </html>
